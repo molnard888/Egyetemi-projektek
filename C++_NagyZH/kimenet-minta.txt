@@ -1,0 +1,86 @@
+main() eleje!
+
+Fajlok generalasa ... 
+KESZ!
+ 
+Vizsgalat: setEredmeny, setPlaceboLista teszt
+
+Toth Akos F/30, erekeles: 7, placebo? IGEN
+Kovacs Barbara N/27, erekeles: 5, placebo? NEM
+Balogh Csaba F/35, erekeles: 9, placebo? NEM
+Vastagh Dora N/32, erekeles: 4, placebo? IGEN
+
+Teszt vege.
+
+Vizsgalat: kiirAdottErtekeles teszt
+
+Ertekeles: 1: Placebo: 0, Hatoanyag: 0
+Ertekeles: 2: Placebo: 0, Hatoanyag: 0
+Ertekeles: 3: Placebo: 0, Hatoanyag: 0
+Ertekeles: 4: Placebo: 1, Hatoanyag: 0
+Ertekeles: 5: Placebo: 0, Hatoanyag: 1
+Ertekeles: 6: Placebo: 0, Hatoanyag: 0
+Ertekeles: 7: Placebo: 1, Hatoanyag: 0
+Ertekeles: 8: Placebo: 0, Hatoanyag: 0
+Ertekeles: 9: Placebo: 0, Hatoanyag: 1
+Ertekeles: 10: Placebo: 0, Hatoanyag: 0
+
+Teszt vege.
+
+Adapter teszt
+
+Interfesz1 hasznalata
+
+Eltelt ido: 0.00787703 s
+Kivonat a beolvasott adatokbol: 
+Ertekeles: 1: Placebo: 18, Hatoanyag: 25
+Ertekeles: 2: Placebo: 47, Hatoanyag: 39
+Ertekeles: 3: Placebo: 80, Hatoanyag: 46
+Ertekeles: 4: Placebo: 102, Hatoanyag: 63
+Ertekeles: 5: Placebo: 103, Hatoanyag: 68
+Ertekeles: 6: Placebo: 77, Hatoanyag: 67
+Ertekeles: 7: Placebo: 42, Hatoanyag: 67
+Ertekeles: 8: Placebo: 20, Hatoanyag: 47
+Ertekeles: 9: Placebo: 8, Hatoanyag: 40
+Ertekeles: 10: Placebo: 3, Hatoanyag: 38
+
+Vizsgalat teljes kiirasa fajlba ... 
+KESZ!
+
+Teszt vege.
+
+Vizsgalat: lekerdezes teszt
+
+4.94059
+4.60417
+4.61389
+5.14815
+7.6
+5.64
+Hiba tortent: a lekerdezesben nincs talalat!
+
+Teszt vege.
+
+Vizsgalat: MegfigyelEredmeny, MegfigyelPlacebo teszt
+
+Megfigyelve: Balogh Csaba, id=3333
+MegfigyelPlacebo: ID=3333, placebo? NEM
+Mellekszal vege.
+
+Teszt vege.
+
+Vizsgalat: getResztvevoSzam, setPiros, setZold teszt
+
+27 ev -> 1 fo
+30 ev -> 2 fo
+32 ev -> 1 fo
+Szuneteltetes tesztelese:
+Lefutas: AZONNALI
+setPiros()
+setZold()
+Lefutas: KESLELTETETT
+Lefutas: AZONNALI
+
+Teszt vege.
+
+main() vege!

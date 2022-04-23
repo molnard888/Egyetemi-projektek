@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="container">
+	<label for="Pname">Játékos neve:</label>
+	<input type="text" id="Pname" name="Pname">
+	<button onclick="StartFunction()" id="start" name="Start">Játék indítása</button>
+</div>
+
+<div id="pontszam">Pontszám: 0<br></div>
+
+<div>
+	<button onclick="sebNoveles()" id="sebNovel" name="sebNov">Sebesség(+)</button>
+	<button onclick="sebCsokkentes()" id="sebCsokk" name="sebCsokk">Sebesség(-)</button>
+</div>
+
+
+
+<div id="CanvasContainer"><canvas id="canvas" width="1000" height="600" style="border:1px solid #000000;"></div>
+
+
+
+
+<script>
+
+var FelfalandoMerete = 9;
+var NoFoodArea=100;
+var FalMerete=40;
+var KorKerulete=FalMerete/2;
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var KoordMatrix = [];
+var ObjectMatrix= [];
+var jatekosNeve;
+var PlayerX;
+var PlayerY;
+var pontSzam=0;
+var Siker=false;
+var intervallum=600;
+var pontszamDiv = document.getElementById('pontszam');
+var StartIntervallum;
+/* var start_button = document.getElementById('start');
+start_button.addEventListener('click', start);  */
+
+function sebNoveles()
+{
+	intervallum=intervallum-100
+	if(intervallum<200)
+	{
+		intervallum=300;
+	}
+	clearInterval(StartIntervallum)
+	StartIntervallum = setInterval(moveEnemyOne, intervallum);
+}
+function sebCsokkentes()
+{
+	intervallum=intervallum+100
+	if(intervallum>1200)
+	{
+		intervallum=1200;
+	}
+	clearInterval(StartIntervallum)
+	StartIntervallum = setInterval(moveEnemyOne, intervallum);
+}
+
+
+function StartFunction() 
+{
+	
+	if(document.getElementById("Pname").value)
+	{	
+	  jatekosNeve=document.getElementById("Pname").value;
+	  StartTheGame();
+	  StartIntervallum = setInterval(moveEnemyOne, intervallum);  // 0,5 masodperc
+	  pontSzam=0;
+	}
+  
+}
+
+function moveEnemyOne() {
+	//console.log(ObjectMatrix);
+	//console.log("moveEnemyOne");
+	
+	var EnemyIndexX;
+	var EnemyIndexY;
+	var PlayerIndexX;
+	var PlayerIndexY;
+	
+	//finding the Enemy1 (5)
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			if(ObjectMatrix[i][j] == 5)
+			{
+				/* console.log(KoordMatrix[i][j]);
+				console.log(i);
+				console.log(j); */
+				EnemyFiveIndexX=i;
+				EnemyFiveIndexY=j; 
+				//console.log("Enemy5 found" +EnemyIndexX+";"+EnemyIndexY);
+			}
+		}
+	}
+	
+	//finding the Enemy1 (4)
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			if(ObjectMatrix[i][j] == 4)
+			{
+				/* console.log(KoordMatrix[i][j]);
+				console.log(i);
+				console.log(j); */
+				EnemyFourIndexX=i;
+				EnemyFourIndexY=j; 
+				//console.log("Enemy4 found" +EnemyIndexX+";"+EnemyIndexY);
+			}
+		}
+	}
+	
+	//finding the Player (1)
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			if(ObjectMatrix[i][j] == 1)
+			{
+				/* console.log(KoordMatrix[i][j]);
+				console.log(i);
+				console.log(j); */
+				PlayerIndexX=i;
+				PlayerIndexY=j; 
+				//console.log("Player found" +PlayerIndexX+";"+PlayerIndexY);
+			}
+		}
+	}
+	moveEnemyToPlayer(4, EnemyFourIndexX, EnemyFourIndexY, PlayerIndexX, PlayerIndexY);
+	moveEnemyToPlayer(5, EnemyFiveIndexX, EnemyFiveIndexY, PlayerIndexX, PlayerIndexY);
+	
+}
+
+function moveEnemyToPlayer(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY)
+{
+	//console.log("moveEnemyToPlayerXXX");
+	Siker=false;
+	var substrings = KoordMatrix[EnemyIndexX][EnemyIndexY]+'';
+	var LocEnemyX = substrings.split(';'); // to substring
+	substrings = KoordMatrix[PlayerIndexX][PlayerIndexY]+'';
+	var LocPlayerX = substrings.split(';'); // to substring
+	
+	//console.log("moveEnemyToPlayer"+ " " + LocEnemyX[0] + " " + LocPlayerX[0]);
+	//console.log(Siker);
+	if(parseInt(LocEnemyX[0]) < parseInt(LocPlayerX[0]) && Siker==false)
+	{
+		//console.log("MoveEnemyRight1");
+		Siker = MoveEnemyRight(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY);
+	}
+	if(parseInt(LocEnemyX[0]) > parseInt(LocPlayerX[0]) && Siker==false)
+	{
+		//console.log("MoveEnemyLeft1");
+		Siker = MoveEnemyLeft(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY);
+	}
+	if(parseInt(LocEnemyX[1]) > parseInt(LocPlayerX[1]) && Siker==false)
+	{
+		//console.log("MoveEnemyUp1");
+		Siker = MoveEnemyUp(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY);
+	}
+	if(parseInt(LocEnemyX[1]) < parseInt(LocPlayerX[1]) && Siker==false)
+	{
+		//console.log("MoveEnemyDown1");
+		Siker = MoveEnemyDown(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY);
+	}
+	if(LocEnemyX[1]==LocPlayerX[1] && LocEnemyX[0]==LocPlayerX[0])
+	{
+		gameOver();
+	}
+	//console.log("NoIf");
+	//console.log(Siker);
+}
+
+function MoveEnemyUp(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY)
+{
+	//console.log("MoveEnemyUp2");
+	var AvoidEnemy;
+	if(EnemyNumber==4)
+	{AvoidEnemy=5}
+	else{AvoidEnemy=4}
+	
+	//console.log("MoveEnemyUp2"+ " " + (EnemyIndexX-1)+ " " + (EnemyIndexY));
+	if(ObjectMatrix[EnemyIndexX-1][EnemyIndexY]!=3 && ObjectMatrix[EnemyIndexX-1][EnemyIndexY]!=AvoidEnemy)
+	{
+		if(ObjectMatrix[EnemyIndexX-1][EnemyIndexY]==1)
+		{
+			//console.log("MoveEnemyUp2if");
+			var substrings = KoordMatrix[EnemyIndexX-1][EnemyIndexY]+'';
+			var Loc = substrings.split(';'); // to substring
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			if(EnemyNumber==4)
+			{
+				ctx.fillStyle = "gray";
+			}
+			else
+			{
+				ctx.fillStyle = "red";
+			}
+			ctx.fill();
+			ObjectMatrix[EnemyIndexX-1][EnemyIndexY]=EnemyNumber;  // EnemyNumber=Enemy
+			ObjectMatrix[EnemyIndexX][EnemyIndexY]=0;
+			gameOver();
+			return true;
+		}
+		else{
+			//console.log("MoveEnemyUp2else");
+			var substrings = KoordMatrix[EnemyIndexX-1][EnemyIndexY]+'';
+			var Loc = substrings.split(';'); // to substring
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			if(EnemyNumber==4)
+			{
+				ctx.fillStyle = "gray";
+			}
+			else
+			{
+				ctx.fillStyle = "red";
+			}
+			ctx.fill();
+			ObjectMatrix[EnemyIndexX-1][EnemyIndexY]=EnemyNumber;  // EnemyNumber=Enemy
+			ObjectMatrix[EnemyIndexX][EnemyIndexY]=0;
+			substrings = KoordMatrix[EnemyIndexX][EnemyIndexY]+'';
+			Loc = substrings.split(';'); // to substring
+			ctx.fillStyle = "black";
+			ctx.fillRect(Loc[0]-FalMerete/2 , Loc[1]-FalMerete/2 , FalMerete, FalMerete);
+			return true;
+		}
+		
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function MoveEnemyDown(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY)
+{
+	//console.log("MoveEnemyUp2");
+	var AvoidEnemy;
+	if(EnemyNumber==4)
+	{AvoidEnemy=5}
+	else{AvoidEnemy=4}
+	
+	//console.log("MoveEnemyUp2"+ " " + (EnemyIndexX+1)+ " " + (EnemyIndexY));
+	if(ObjectMatrix[EnemyIndexX+1][EnemyIndexY]!=3 && ObjectMatrix[EnemyIndexX+1][EnemyIndexY]!=AvoidEnemy)
+	{
+		if(ObjectMatrix[EnemyIndexX+1][EnemyIndexY]==1)
+		{
+			//console.log("MoveEnemyUp2if");
+			var substrings = KoordMatrix[EnemyIndexX+1][EnemyIndexY]+'';
+			var Loc = substrings.split(';'); // to substring
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			if(EnemyNumber==4)
+			{
+				ctx.fillStyle = "gray";
+			}
+			else
+			{
+				ctx.fillStyle = "red";
+			}
+			ctx.fill();
+			ObjectMatrix[EnemyIndexX+1][EnemyIndexY]=EnemyNumber;  // EnemyNumber=Enemy
+			ObjectMatrix[EnemyIndexX][EnemyIndexY]=0;
+			gameOver();
+			return true;
+		}
+		else{
+			//console.log("MoveEnemyUp2else");
+			var substrings = KoordMatrix[EnemyIndexX+1][EnemyIndexY]+'';
+			var Loc = substrings.split(';'); // to substring
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			if(EnemyNumber==4)
+			{
+				ctx.fillStyle = "gray";
+			}
+			else
+			{
+				ctx.fillStyle = "red";
+			}
+			ctx.fill();
+			ObjectMatrix[EnemyIndexX+1][EnemyIndexY]=EnemyNumber;  // EnemyNumber=Enemy
+			ObjectMatrix[EnemyIndexX][EnemyIndexY]=0;
+			substrings = KoordMatrix[EnemyIndexX][EnemyIndexY]+'';
+			Loc = substrings.split(';'); // to substring
+			ctx.fillStyle = "black";
+			ctx.fillRect(Loc[0]-FalMerete/2 , Loc[1]-FalMerete/2 , FalMerete, FalMerete);
+			return true;
+		}
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function MoveEnemyRight(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY)
+{
+	//console.log("MoveEnemyRight2");
+	var AvoidEnemy;
+	if(EnemyNumber==4)
+	{AvoidEnemy=5}
+	else{AvoidEnemy=4}
+	
+	//console.log("MoveEnemyRight2"+ " " + (EnemyIndexX+1)+ " " + (EnemyIndexY+1));
+	if(ObjectMatrix[EnemyIndexX][EnemyIndexY+1]!=3 && ObjectMatrix[EnemyIndexX][EnemyIndexY+1]!=AvoidEnemy)
+	{
+		if(ObjectMatrix[EnemyIndexX][EnemyIndexY+1]==1)
+		{
+			//console.log("MoveEnemyRight2if");
+			var substrings = KoordMatrix[EnemyIndexX][EnemyIndexY+1]+'';
+			var Loc = substrings.split(';'); // to substring
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			if(EnemyNumber==4)
+			{
+				ctx.fillStyle = "gray";
+			}
+			else
+			{
+				ctx.fillStyle = "red";
+			}
+			ctx.fill();
+			ObjectMatrix[EnemyIndexX][EnemyIndexY+1]=EnemyNumber;  // EnemyNumber=Enemy
+			ObjectMatrix[EnemyIndexX][EnemyIndexY]=0;
+			gameOver();
+			return true;
+		}
+		else{
+			//console.log("MoveEnemyRight2else");
+			var substrings = KoordMatrix[EnemyIndexX][EnemyIndexY+1]+'';
+			var Loc = substrings.split(';'); // to substring
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			if(EnemyNumber==4)
+			{
+				ctx.fillStyle = "gray";
+			}
+			else
+			{
+				ctx.fillStyle = "red";
+			}
+			ctx.fill();
+			ObjectMatrix[EnemyIndexX][EnemyIndexY+1]=EnemyNumber;  // EnemyNumber=Enemy
+			ObjectMatrix[EnemyIndexX][EnemyIndexY]=0;
+			substrings = KoordMatrix[EnemyIndexX][EnemyIndexY]+'';
+			Loc = substrings.split(';'); // to substring
+			ctx.fillStyle = "black";
+			ctx.fillRect(Loc[0]-FalMerete/2 , Loc[1]-FalMerete/2 , FalMerete, FalMerete);
+			return true;
+		}
+		
+	}
+	else
+	{
+		return false;
+	}
+}
+
+function MoveEnemyLeft(EnemyNumber, EnemyIndexX, EnemyIndexY, PlayerIndexX, PlayerIndexY)
+{
+	//console.log("MoveEnemyLeft2");
+	var AvoidEnemy;
+	if(EnemyNumber==4)
+	{AvoidEnemy=5}
+	else{AvoidEnemy=4}
+	
+	//console.log("MoveEnemyLeft2"+ " " + (EnemyIndexX+1)+ " " + (EnemyIndexY-1));
+	if(ObjectMatrix[EnemyIndexX][EnemyIndexY-1]!=3 && ObjectMatrix[EnemyIndexX][EnemyIndexY-1]!=AvoidEnemy)
+	{
+		if(ObjectMatrix[EnemyIndexX][EnemyIndexY-1]==1)
+		{
+			//console.log("MoveEnemyLeft2if");
+			var substrings = KoordMatrix[EnemyIndexX][EnemyIndexY-1]+'';
+			var Loc = substrings.split(';'); // to substring
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			if(EnemyNumber==4)
+			{
+				ctx.fillStyle = "gray";
+			}
+			else
+			{
+				ctx.fillStyle = "red";
+			}
+			ctx.fill();
+			ObjectMatrix[EnemyIndexX][EnemyIndexY-1]=EnemyNumber;  // EnemyNumber=Enemy
+			ObjectMatrix[EnemyIndexX][EnemyIndexY]=0;
+			gameOver();
+			return true;
+		}
+		else{
+			//console.log("MoveEnemyLeft2else");
+			var substrings = KoordMatrix[EnemyIndexX][EnemyIndexY-1]+'';
+			var Loc = substrings.split(';'); // to substring
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			if(EnemyNumber==4)
+			{
+				ctx.fillStyle = "gray";
+			}
+			else
+			{
+				ctx.fillStyle = "red";
+			}
+			ctx.fill();
+			ObjectMatrix[EnemyIndexX][EnemyIndexY-1]=EnemyNumber;  // EnemyNumber=Enemy
+			ObjectMatrix[EnemyIndexX][EnemyIndexY]=0;
+			substrings = KoordMatrix[EnemyIndexX][EnemyIndexY]+'';
+			Loc = substrings.split(';'); // to substring
+			ctx.fillStyle = "black";
+			ctx.fillRect(Loc[0]-FalMerete/2 , Loc[1]-FalMerete/2 , FalMerete, FalMerete);
+			
+			return true;
+		}
+		
+	}
+	else
+	{
+		return false;
+	}
+}
+	
+function initCanvasAndCircle()
+{
+	pontSzam=0;
+	ctx.fillStyle = "black";
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+	ctx.beginPath();
+	ctx.arc( canvas.width/2 , canvas.height/2 , KorKerulete, 0, 2 * Math.PI);
+	ctx.fillStyle = "yellow";
+	ctx.fill();
+	ObjectMatrix[7][12]=1;  // 1=Player
+}
+
+function initObjectMatrix()
+{
+	
+	var counter=0;
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		ObjectMatrix[i] = [];
+		counter++;
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			ObjectMatrix[i][j] = 0;
+			//my_html+=" "+ObjectMatrix[i][j]+" ";
+		}
+	}
+	//console.log(ObjectMatrix);
+}
+
+function initKoordinataMatrix()
+{
+	var container = document.getElementById('container');
+	var my_html='';
+		
+	var counter=0;
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		KoordMatrix[i] = [];
+		counter++;
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			KoordMatrix[i][j] = (((j+1)*FalMerete)-(FalMerete/2))+";"+(((i+1)*FalMerete)-(FalMerete/2));
+			my_html+=" "+KoordMatrix[i][j]+" ";
+		}
+	}
+	my_html+="<br>";
+	//console.log(KoordMatrix);
+	//container.innerHTML = KoordMatrix[7][12];
+}
+
+
+function keysPressed(e) {
+	  //console.log(event.keyCode);
+	  // left
+	  if (e.keyCode==37) {
+		//console.log("LEFT");
+		MoveLeft();
+	  }
+
+	  // right
+	  if (e.keyCode==39) {
+		//console.log("RIGHT");
+		MoveRight();
+	  }
+
+	  // down
+	  if (e.keyCode==40) {
+		//console.log("DOWN");
+		MoveDown();
+	  }
+
+	  // up
+	  if (e.keyCode==38) {
+		//console.log("UP");
+		MoveUp();
+	  }
+
+	  e.preventDefault();
+}
+
+function MoveUp()
+{
+	var iIndex;
+	var jIndex;
+	//finding the Player
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			if(ObjectMatrix[i][j] == 1)
+			{
+				
+				/* //console.log(KoordMatrix[i][j]);
+				console.log(i);
+				console.log(j); */
+				iIndex=i;
+				jIndex=j; 
+			}
+		}
+	}
+	
+	if((iIndex-1)<0)
+	{
+		//console.log("Game Over!");
+	}
+	else
+	{
+		try{
+			if(ObjectMatrix[iIndex-1][jIndex]==0)   // bal szomszéd vizsgálata
+			{
+				drawPlayer(iIndex-1, jIndex, iIndex, jIndex);
+			}
+			if(ObjectMatrix[iIndex-1][jIndex]==1)
+			{
+				drawPlayer(iIndex-1, jIndex, iIndex, jIndex);
+			}
+			if(ObjectMatrix[iIndex-1][jIndex]==2)   // +1 pont
+			{
+				drawPlayer(iIndex-1, jIndex, iIndex, jIndex);
+				pontSzam++;
+				pontszamDiv.innerHTML="Pontszám: "+pontSzam; 
+				//console.log(pontSzam);
+			}
+			if(ObjectMatrix[iIndex-1][jIndex]==4 || ObjectMatrix[iIndex-1][jIndex]==5)
+			{
+				//console.log("Game Over!");
+			}
+		}
+		catch(e)
+		{
+			//console.log("Game Over!");
+		}
+	}
+
+}
+
+function MoveDown()
+{
+	var iIndex;
+	var jIndex;
+	
+	//finding the Player
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			if(ObjectMatrix[i][j] == 1)
+			{
+				/* ////console.log(KoordMatrix[i][j]);
+				//console.log(i);
+				//console.log(j); */
+				iIndex=i;
+				jIndex=j; 
+			}
+		}
+	}
+	
+	if((iIndex+1)>14)
+	{
+		//console.log("Game Over!");
+	}
+	else
+	{
+		try{
+			if(ObjectMatrix[iIndex+1][jIndex]==0)   // bal szomszéd vizsgálata
+			{
+				drawPlayer(iIndex+1, jIndex, iIndex, jIndex);
+			}
+			if(ObjectMatrix[iIndex+1][jIndex]==1)
+			{
+				drawPlayer(iIndex+1, jIndex, iIndex, jIndex);
+			}
+			if(ObjectMatrix[iIndex+1][jIndex]==2)   // +1 pont
+			{
+				drawPlayer(iIndex+1, jIndex, iIndex, jIndex);
+				pontSzam++;
+				pontszamDiv.innerHTML="Pontszám: "+pontSzam; 
+				//console.log(pontSzam);
+			}
+			if(ObjectMatrix[iIndex+1][jIndex]==4 || ObjectMatrix[iIndex+1][jIndex]==5)
+			{
+				//console.log("Game Over!");
+			}
+		}
+		catch(e)
+		{
+			//console.log("Game Over!");
+		}
+	}
+	
+
+}
+
+
+function MoveLeft()
+{
+	var iIndex;
+	var jIndex;
+	//finding the Player
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			if(ObjectMatrix[i][j] == 1)
+			{
+				/* ////console.log(KoordMatrix[i][j]);
+				//console.log(i);
+				//console.log(j); */
+				iIndex=i;
+				jIndex=j; 
+			}
+		}
+	}
+	
+	////console.log((jIndex-1) +"<--"+jIndex);
+	if((jIndex-1)<0)
+	{
+		//console.log("Game Over!");
+	}
+	else
+	{
+		try{
+			if(ObjectMatrix[iIndex][jIndex-1]==0)   // bal szomszéd vizsgálata
+			{
+				drawPlayer(iIndex, jIndex-1, iIndex, jIndex);
+			}
+			if(ObjectMatrix[iIndex][jIndex-1]==1)
+			{
+				drawPlayer(iIndex, jIndex-1, iIndex, jIndex);
+			}
+			if(ObjectMatrix[iIndex][jIndex-1]==2)   // +1 pont
+			{
+				drawPlayer(iIndex, jIndex-1, iIndex, jIndex);
+				pontSzam++;
+				pontszamDiv.innerHTML="Pontszám: "+pontSzam; 
+				//console.log(pontSzam);
+			}
+			if(ObjectMatrix[iIndex][jIndex-1]==4 || ObjectMatrix[iIndex][jIndex-1]==5)
+			{
+				//console.log("Game Over!");
+			}
+		}
+		catch(e)
+		{
+			//console.log("Game Over!");
+		}
+	}
+	
+	
+	
+	
+}
+
+function MoveRight()
+{
+	var iIndex;
+	var jIndex;
+	//finding the Player
+	for(var i=0; i<15; i++) {  //sor   (magasság)
+		for(var j=0; j<25; j++) {  //oszlop   (szélesség)
+			if(ObjectMatrix[i][j] == 1)
+			{
+				/* ////console.log(KoordMatrix[i][j]);
+				//console.log(i);
+				//console.log(j); */
+				iIndex=i;
+				jIndex=j; 
+			}
+		}
+	}
+	
+	if((jIndex+1)>24)
+	{
+		//console.log("Game Over!");
+	}
+	else
+	{
+		try{
+			if(ObjectMatrix[iIndex][jIndex+1]==0)   // bal szomszéd vizsgálata
+			{
+				drawPlayer(iIndex, jIndex+1, iIndex, jIndex);
+			}
+			if(ObjectMatrix[iIndex][jIndex+1]==1)
+			{
+				drawPlayer(iIndex, jIndex+1, iIndex, jIndex);
+			}
+			if(ObjectMatrix[iIndex][jIndex+1]==2)   // +1 pont
+			{
+				drawPlayer(iIndex, jIndex+1, iIndex, jIndex);
+				pontSzam++;
+				pontszamDiv.innerHTML="Pontszám: "+pontSzam; 
+				console.log(pontSzam);
+			}
+			if(ObjectMatrix[iIndex][jIndex+1]==4 || ObjectMatrix[iIndex][jIndex+1]==5)
+			{
+				gameOver();
+			}
+		}
+		catch(e)
+		{
+			console.log("Game Over!" + jIndex+1);
+		}
+	}
+	
+	
+}
+
+function gameOver()
+{
+	clearInterval(StartIntervallum);
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	ctx.font = "50px Arial";
+	ctx.fillText("Game Over", 10, 50);
+}
+
+function drawPlayer(i, j, prevI, prevJ)
+ {
+		
+		ObjectMatrix[prevI][prevJ]=0;
+		var substrings = KoordMatrix[i][j]+'';
+		var Loc = substrings.split(';'); // to substring
+		//console.log(substrings);
+		
+		if( Loc[0]<0 || Loc[1]<0 || Loc[0]>canvas.width || Loc[1]>canvas.height )
+		{console.log("Game Over!");}
+		
+			ctx.beginPath();
+			ctx.arc( Loc[0] , Loc[1] , KorKerulete, 0, 2 * Math.PI);
+			ctx.fillStyle = "yellow";
+			ctx.fill();
+		
+		
+		ObjectMatrix[i][j]=1;  // 1=Player
+		substrings = KoordMatrix[prevI][prevJ]+'';
+		Loc = substrings.split(';'); // to substring
+		ctx.fillStyle = "black";
+		ctx.fillRect(Loc[0]-FalMerete/2 , Loc[1]-FalMerete/2 , FalMerete, FalMerete);
+ }
+ 
+function initFood()
+{
+	for(var i=0; i<30; i++)
+	{
+		/* var NoFoodAreaHeightMin = (canvas.height-NoFoodArea)/2;
+		var NoFoodAreaHeightMax = (canvas.height+NoFoodArea)/2;
+		var NoFoodAreaWidthMin = (canvas.width-NoFoodArea)/2;
+		var NoFoodAreaWidthMax = (canvas.width+NoFoodArea)/2; */
+		var xRandom = getRandomInt(1, 25);
+		var yRandom = getRandomInt(1, 15); 
+		
+		while(ObjectMatrix[yRandom-1][xRandom-1] != 0)
+		{
+			xRandom = getRandomInt(1, 25);
+			yRandom = getRandomInt(1, 15); 
+		} 
+		var substrings = KoordMatrix[yRandom-1][xRandom-1]+'';
+		var Loc = substrings.split(';'); // to substring
+		
+		ctx.beginPath();
+		ctx.arc( Loc[0] , Loc[1] , FelfalandoMerete, 0, 2 * Math.PI);
+		ctx.fillStyle = "orange";
+		ctx.fill();
+		ObjectMatrix[yRandom-1][xRandom-1] = 2;   // 2=Food
+		
+	}
+	//console.log(KoordMatrix);
+	
+}
+
+function initWall()
+{
+	for(var i=0; i<90; i++)
+	{
+		var xRandom = getRandomInt(1, 25);
+		var yRandom = getRandomInt(1, 15); 
+		
+		while(ObjectMatrix[yRandom-1][xRandom-1] != 0)
+		{
+			xRandom = getRandomInt(1, 25);
+			yRandom = getRandomInt(1, 15); 
+		} 
+		var substrings = KoordMatrix[yRandom-1][xRandom-1]+'';
+		var Loc = substrings.split(';'); // to substring
+		
+		ctx.fillStyle = "blue";
+		ctx.fillRect(Loc[0]-(FalMerete/2) , Loc[1]-(FalMerete/2), FalMerete, FalMerete);
+		ObjectMatrix[yRandom-1][xRandom-1] = 3;   // 3=Wall
+	}
+}
+
+function initEnemy()
+{
+	ctx.beginPath();
+	ctx.arc( 980 , 20 , KorKerulete, 0, 2 * Math.PI);
+	ctx.fillStyle = "gray";
+	ctx.fill();
+	ObjectMatrix[0][24]=4;  // 4=Enemy
+	
+	ctx.beginPath();
+	ctx.arc( 20 , 580 , KorKerulete, 0, 2 * Math.PI);
+	ctx.fillStyle = "red";
+	ctx.fill();
+	ObjectMatrix[14][0]=5;  // 5=Enemy
+}
+
+function getRandomInt(min, max) 
+{
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+ 
+function StartTheGame(){
+	initKoordinataMatrix();
+	initObjectMatrix();
+	initCanvasAndCircle();
+	initEnemy();
+	initFood();
+	initWall();
+	window.addEventListener("keydown", keysPressed, false);
+}
+
+</script> 
+
+
+
+		
+</body>
+</html>
