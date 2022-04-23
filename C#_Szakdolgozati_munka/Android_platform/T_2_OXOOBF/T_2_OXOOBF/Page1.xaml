@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="T_2_OXOOBF.Page1" 
+             NavigationPage.HasNavigationBar="False" BackgroundImageSource="YKK_Storefront_Mobile.jpg" BackgroundColor="Transparent">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="0,0,0,65">
+
+            <Entry x:Name="Felhasznalonev" Placeholder="Felhasználónév" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="Jelszo" Placeholder="Jelszó" IsPassword="True" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Button VerticalOptions="Center" Text="Bejelentkezés" TextColor="Black" BackgroundColor="Transparent"
+                    BorderColor="Gray" BorderWidth="1.5" CornerRadius="20" Clicked="Button_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

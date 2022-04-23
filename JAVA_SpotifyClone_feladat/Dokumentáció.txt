@@ -1,0 +1,12 @@
+A készítő neve: Molnár Dániel 
+Neptun kódja: OXOOBF 
+Szak: Mérnökinformatikus BSC 
+
+Rövid ismertetés:
+A program indítása után egy kezdőmenü fogad minket. Itt megadhatjuk, hogy milyen műveletet szeretnénk végezni a rendelkezésre álló zenékkel.(InditoKep.jpg)
+Ha az 1-es műveletet választjuk, akkor a program lejátsza a zeneszámokat abban a sorrendben ahogy az az adatfájlban szerepel.(muv_1.jpg)
+Ha a 2-es műveletet választjuk, akkor a program lejátsza a zeneszámokat véletlenszerű sorrendben.(muv_2.jpg)
+Ha a 3-as műveletet választjuk, akkor a program kérni fogja a választott előadó nevét, akinek a dalait egymás után le fogja játszani.(muv_3.jpg)
+Ha a 4-es műveletet választjuk, akkor a program sorban kilistázza az adatfájlban lévő zeneszámok stílusait.(muv_4.jpg)
+Ha az 5-ös műveletet választjuk, akkor a program kilistázza az összes előadót, névsor szerint növekvő sorrendbe rendezve.(muv_5.jpg)
+Ha a 6-os műveletet választjuk, akkor a program először sorszámozva kiirja nekünk az összes zeneszámot. Majd ezután a zeneszámokat sorszám alapján tudjuk hozzáadni lejátszási listához, amit a program a "Playlist.txt" fájlba ment.(muv_61.jpg,muv_62.jpg,muv63.jpg)

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="T_2_OXOOBF.VasarlasReszletek">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+            <!-- <Image Source="about_us.png" /> -->
+            <Label x:Name="UsernameLbl" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Button x:Name="LogOutBtn" VerticalOptions="End" BackgroundColor="Transparent"
+                    BorderColor="Transparent" BorderWidth="1" CornerRadius="20" Clicked="LogOutBtn_Clicked" ImageSource="signout.png"></Button>
+            <!-- <Image Source="signout.png"/>    -->
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+
+    <StackLayout>
+        <Label x:Name="VasarlasIDlbl" Margin="10,0,0,0" Text="" Grid.Row="0" Grid.Column="0" FontSize="Medium"  VerticalOptions="Center" HorizontalOptions="Start" TextColor="Black" ></Label>
+        <Label x:Name="StorageIDlbl" Margin="10,0,0,0" Text="Márka"  Grid.Row="1" Grid.Column="0" FontSize="Medium"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+        <Label x:Name="Nevlbl" Margin="10,0,0,0" Text="Típus"   Grid.Row="2" Grid.Column="0" FontSize="Medium"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+        <Label x:Name="Telefonlbl" Margin="10,0,0,0" Text="Kategória"   Grid.Row="3" Grid.Column="0" FontSize="Medium"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+        <Label x:Name="Cimlbl" Margin="10,0,0,0" Text="Ár"   Grid.Row="4" Grid.Column="0" FontSize="Medium"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+        <Label x:Name="Vegosszeglbl" Margin="10,0,0,0" Text="Mennyiség"   Grid.Row="5" Grid.Column="0" FontSize="Medium"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+        <Label x:Name="Idolbl" Margin="10,0,0,0" Text="Lokácio_sor"   Grid.Row="6" Grid.Column="0" FontSize="Medium"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+        <Label Margin="10,0,0,0" Text="Vásárolt termékek:"   Grid.Row="6" Grid.Column="0" FontSize="Medium"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+        
+        <ListView x:Name="MyListView"
+                ItemsSource="{Binding Items}"
+                ItemTapped="MyListView_ItemTapped"
+                CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>

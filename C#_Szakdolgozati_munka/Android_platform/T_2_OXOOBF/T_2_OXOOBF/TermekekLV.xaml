@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="T_2_OXOOBF.TermekekLV">
+
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+            <!-- <Image Source="about_us.png" /> -->
+            <Label x:Name="UsernameLbl" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Button x:Name="LogOutBtn" VerticalOptions="End" BackgroundColor="Transparent"
+                    BorderColor="Transparent" BorderWidth="1" CornerRadius="20" Clicked="LogOutBtn_Clicked" ImageSource="signout.png"></Button>
+            <!-- <Image Source="signout.png"/>    -->
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="0.2"/>
+        </Grid.ColumnDefinitions>
+
+        <ListView x:Name="MyListView"
+            ItemsSource="{Binding Items}"
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        
+        <StackLayout Orientation="Horizontal" Grid.Row="1" VerticalOptions="CenterAndExpand">
+
+            <Button x:Name="KeresBttn" 
+            HorizontalOptions="FillAndExpand"  
+                        ImageSource="search.png" Clicked="KeresBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" /> 
+
+            <Button x:Name="RendezBttn"
+            HorizontalOptions="FillAndExpand"   
+                        ImageSource="rendezes.png" Clicked="RendezBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            <Button x:Name="TorolBttn"
+            HorizontalOptions="FillAndExpand" 
+                        ImageSource="torol.png" Clicked="TorolBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            <Button x:Name="KosarbaBttn" 
+            HorizontalOptions="FillAndExpand" 
+                        ImageSource="shcart.png" Clicked="KosarbaBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            <Button x:Name="SzerkesztesBttn"
+            HorizontalOptions="FillAndExpand"  
+                        ImageSource="szerkeztes.png" Clicked="SzerkesztesBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+            
+        </StackLayout>
+    </Grid>
+
+    
+
+   
+</ContentPage>

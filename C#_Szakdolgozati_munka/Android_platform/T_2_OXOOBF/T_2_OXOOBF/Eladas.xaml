@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="T_2_OXOOBF.Eladas">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+            <!-- <Image Source="about_us.png" /> -->
+            <Label x:Name="UsernameLbl" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Button x:Name="LogOutBtn" VerticalOptions="End" BackgroundColor="Transparent"
+                    BorderColor="Transparent" BorderWidth="1" CornerRadius="20" Clicked="LogOutBtn_Clicked" ImageSource="signout.png"></Button>
+            <!-- <Image Source="signout.png"/>    -->
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="0.2"/>
+        </Grid.ColumnDefinitions>
+
+        <StackLayout Grid.Row="0">
+            <Entry x:Name="Nev"  FontSize="Medium" Placeholder="Nev"  VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray" />
+            <Entry x:Name="Cim"    FontSize="Medium" Placeholder="Cim" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="Telefon"    FontSize="Medium" Placeholder="Telefon" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Label x:Name="Vegosszeg" Text="517963 Ft" TextColor="Black"></Label>
+
+                <ListView Grid.Row="1" x:Name="MyListView" BackgroundColor="Wheat"
+            ItemsSource="{Binding Items}"
+            ItemTapped="Handle_ItemTapped"
+            CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding .}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="2" VerticalOptions="CenterAndExpand">
+
+            <Button x:Name="BeolvasBttn" 
+            HorizontalOptions="FillAndExpand"  
+                        Clicked="BeolvasBttn_Clicked" ImageSource="qrScanSmall.png" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            <Button x:Name="TorolBttn"
+            HorizontalOptions="FillAndExpand"   
+                        Clicked="TorolBttn_Clicked" ImageSource="binSmall.png" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            <Button x:Name="OsszTorolBttn"
+            HorizontalOptions="FillAndExpand" 
+                        Clicked="OsszTorolBttn_Clicked" ImageSource="AllgarbageSmall.png" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+
+            <Button x:Name="EladasBttn" 
+            HorizontalOptions="FillAndExpand" 
+                        Clicked="EladasBttn_Clicked" ImageSource="cartSmall.png" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            
+
+        </StackLayout>
+        </StackLayout>
+
+            
+    </Grid>
+
+
+
+
+</ContentPage>

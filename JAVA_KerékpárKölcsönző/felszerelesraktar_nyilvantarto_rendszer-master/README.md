@@ -1,0 +1,1 @@
+# Felszerelésraktár nyilvántartó rendszer

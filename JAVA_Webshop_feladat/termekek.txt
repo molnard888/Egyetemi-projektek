@@ -1,0 +1,60 @@
+1;ASUS TUF GAMING B460-PLUS;alaplap;40590;7
+2;MSI Z490-A PRO;alaplap;55890;16
+3;Asus PRIME H410M-R;alaplap;22290;32
+4;Gigabyte B460M DS3H;alaplap;32542;19
+5;MSI MAG B460 Tomahawk;alaplap;48790;7
+6;ASUS ROG STRIX Z490-E GAMING;alaplap;111990;5
+7;Kingston 2x8GB DDR4 3200MHz HyperX Predator XMP;memória modul;33390;9
+8;Kingston 2x8GB DDR4 2666MHz HyperX FURY fekete;memória;25390;7
+9;GSkill Aegis 2x8GB DDR4 3000MHz;memória modul;22390;11
+10;G.Skill 8GB 3200MHz DDR4 Aegis;memória modul;11190;32
+11;Kingston 2x8GB DDR4 3200MHz HyperX Predator RGB;memória modul;33190;9
+12;Kingston 8GB DDR4 3200MHz HyperX FURY;memória modul;14490;13
+13;Toshiba 1TB 64MB;merevlemez;12090;7
+14;Seagate 2TB BarraCuda 256MB;merevlemez;18990;2
+15;Seagate 1TB SATA3 64MB;merevlemez;12890;11
+16;Western Digital 1TB 64MB;merevlemez;13090;32
+17;Toshiba 3TB 64MB P300;merevlemez;23190;5
+18;Toshiba 2TB 64MB;merevlemez;18890;16
+19;AMD Ryzen 5 2600;processzor;49190;29
+20;AMD Ryzen 7 2700X;processzor;79090;9
+21;AMD Ryzen 7 3700X;processzor;117590;2
+22;Intel Core i5-10600;processzor;81490;7
+23;Intel Core i7-10700;processzor;117790;19
+24;Intel Core i9-10900K;processzor;218090;12
+25;Kingston 240GB SA400S37/240G;SSD meghajtó;10090;9
+26;Kingston 480GB SA400S37/480G;SSD meghajtó;18690;12
+27;Samsung 500GB 860 EVO MZ-76E500B/EU;SSD meghajtó;23090;32
+28;Samsung 500GB 970 Evo Plus MZ-V7S500BW M.2;SSD meghajtó;35290;16
+29;Samsung 250GB 970 EVO Plus MZ-V7S250BW M.2 PCIe;SSD meghajtó;22190;15
+30;Samsung 1TB 970 EVO MZ-V7E1T0BW M.2 PCIe;SSD meghajtó;54990;19
+31;Zalman S2 fekete;számítógépház;11890;7
+32;Zalman I3 EDGE fekete;számítógépház;17490;32
+33;nBase N5 ELITE Victor ablakos;számítógépház;11690;9
+34;NZXT Midi H510 Matt CA-H510B-B1 fekete;számítógépház;26390;5
+35;Zalman S4 fekete;számítógépház;15390;29
+36;Akyga AK35BK fekete;számítógépház;4090;13
+37;Cooler Master 600W MWE WHITE V2 MPE-6001-ACABW-EU;tápegység;20490;11
+38;FSP Hyper K PRO 700W;tápegység;23990;32
+39;Cooler Master 500W Elite V3 MPW-5001-ACABN1-EU;tápegység;15390;16
+40;FSP 500W Hyper M;tápegység;23490;19
+41;GigaByte GP-P550B 550W;tápegység;16890;2
+42;Cooler Master 650W MWE V2 MPE-6501-AFAAG-EU;tápegység;34290;15
+43;Asus RX5700 XT 8GB GDDR6;videokártya;195890;12
+44;Asus RX 570 ROG-STRIX-RX570-O8G-GAMING;videokártya;75590;9
+45;MSI RX5600 XT GAMING X 6GB GDDR6;videokártya;135290;7
+46;Gigabyte RTX 2080 SUPER GAMING OC WATERFORCE 8GB GDDR6;videokártya;246790;32
+47;Asus GTX1050 Ti 4GB GDDR5 PH-GTX1050TI-4G;videokártya;53090;12
+48;PNY VCG16606SDFMPB-O GeForce GTX 1660 6GB GDDR6;videokártya;106490;15
+49;Gembird MUSW-4B-04 fekete;egér;1090;13
+50;Trust 23213 GXT103 Gamer optikai rádiós;egér;4390;2
+51;iMICE E-1800 zöld vezeték nélküli;egér;1190;15
+52;Gembird MUSW-4B-04-BS ezüst-fekete vezeték nélküli;egér;1190;12
+53;Trust GXT161 22210 gamer optikai;egér;12890;11
+54;Asus WT425 fekete;egér;4790;29
+55;AOC CQ32G1 31,5" LED;monitor;130590;5
+56;Philips 243V7QDSB;monitor;37990;7
+57;Gigabyte AORUS G27FC-EK ívelt;monitor;90490;16
+58;Philips 246E9QDSB fekete-ezüst;monitor;45490;19
+59;LG 29WL500-B;monitor;77090;32
+60;LG 34UM69G-B;monitor;108790;9

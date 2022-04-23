@@ -1,0 +1,39 @@
+Imagine Dragons;"Radioactive";Rock;261
+Awolnation;"Sail";Indie;263
+LMFAO;"Party Rock Anthem";Pop;375
+Post Malone;"Goodbyes";Trap;176
+Michael Jackson;"Say Say Say";Post-disco;235
+Bruno Mars;"Uptown Funk";Pop;270
+Post Malone;"Wow.";Hip-hop;149
+The Black Eyed Peas;"I Gotta Feeling";Pop;291
+Ed Sheeran;"Shape of You";Pop;235
+Bruno Mars;"Just the Way You Are";Pop;221
+Ed Sheeran;"Perfect";Pop;263
+Pharrell Williams;"Blurred Lines";R&B;265
+The Black Eyed Peas;"Boom Boom Pow";Electro;252
+Pharrell Williams;"Happy";Soul;233
+Michael Jackson;"Billie Jean";Pop;294
+Luis Fonsi;"Despacito";Reggaeton;227
+Eminem;"Lose Yourself";Hip-hop;267
+Wiz Khalifa;"See You Again";Hip-hop;229
+The Chainsmokers;"Closer";Pop;244
+Drake;"God's Plan";Pop;198
+The Chainsmokers;"All We Know";Future bass;194
+The Chainsmokers;"Inside Out";Pop;233
+Roddy Ricch;"The Box";Hip-hop;196
+Roddy Ricch;"Walk Em Down";Hip-hop;172
+Kanye West;"Gold Digger";Hip-hop;208
+Adele;"Hello";Soul;295
+Drake;"Come and See Me";Alternative R&B;235
+Adele;"When We Were Young";Soul;290
+Drake;"One Dance";Pop;174
+Post Malone;"Circles";Pop rock;214
+Adele;"Skyfall";Orchestral pop;286
+Drake;"Pop Style";Hip-hop;209
+Ed Sheeran;"Thinking Out Loud";Blue-eyed soul;281
+Adele;"Turning Tables";Soul;250
+Drake;"In My Feelings";Bounce;217
+
+
+
+
