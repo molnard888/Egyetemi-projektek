@@ -1,0 +1,192 @@
+
+body {
+  background-image: url('hatter_kina.jpg');
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+    font-size: 24px;
+	
+} 
+
+.cyber{
+	color: #DEDEDE;
+}
+
+.celljo{
+	text-align: right;
+}
+
+.cellcen{
+	text-align: center;
+}
+
+.navbar {
+position:absolute
+  width: 100%; /* Full width */
+  top: 0; /* Position the navbar at the top of the page */
+}
+
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: yellow;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link {
+    color: yellow;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+}
+
+.keleti{
+	color: yellow !important;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	
+}
+
+.tablazat{
+	margin-left: auto;
+  margin-right: auto;
+	text-align: center;
+	width: 70%;
+}
+
+
+
+.telj_et{
+	text-align: center;
+	color: yellow;
+	margin: 100px;
+	border: 3px solid #DEDEDE;
+  border-radius: 12px;
+	
+}
+
+.rolu{
+	font-size: 28px;
+	text-align: center;
+	color: #DEDEDE;
+	margin: 100px;
+	border: 3px solid #DEDEDE;
+  border-radius: 12px;
+	
+}
+
+.resz{
+	margin: 100px;
+	border: 3px solid #DEDEDE;
+  border-radius: 12px;
+	
+}
+
+.footerMD{ 
+	clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: 200px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #222222;
+  color: gray;
+  text-align: center;
+}
+
+.carousel-inner{
+	
+	margin: auto;
+	margin-top: 10px;
+	width: 1000px;
+}
+
+.carousel-control-prev{
+	margin-left:100px;
+}
+
+.carousel-control-next{
+	margin-right:100px;
+}
+
+.urlap{
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.delbutton{
+	color: white;
+    background-color: red;
+    border-color: red;
+}
+
+.osszegbutton{
+	color: white;
+    background-color: orange;
+    border-color: orange;
+	
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: white;
+    background-color: yellow;
+    border-color: yellow; 
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+        color: #fff!important;
+        background-color: orange!important;
+        border-color: orange!important;
+    }
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+        color: #fff!important;
+        background-color: #A8CC6B!important;
+        border-color: #A8CC6B!important;
+    }
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+        color: #fff!important;
+        background-color: #A8CC6B!important;
+        border-color: #A8CC6B!important;
+    }
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-image: none;
+    background-color: #A8CC6B!important;
+        border-color: #A8CC6B!important;
+}
+
+.covid{
+	font-size: 28px;
+	text-align: center;
+	color: yellow;
+	margin: 100px;
+	border: 3px solid #DEDEDE;
+  border-radius: 12px;
+}
+
+#itt {
+	color: red;
+}
