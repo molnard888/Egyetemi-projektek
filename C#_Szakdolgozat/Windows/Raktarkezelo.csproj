@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1043C9F2-C0F7-4771-9EB9-A4ACECED7DD1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Raktarkezelo</RootNamespace>
+    <AssemblyName>Raktarkezelo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\PE_Mernokinfo\----Szakdolgozat----\Szakdolgozat\OXOOBF_Raktarkezelo_Windows\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D878B746CEBF5DE9C029AF4BDDF73D5EDB5800E0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Raktarkezelo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb">
+      <HintPath>packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401">
+      <HintPath>packages\AForge.Video.2.2.5\lib\AForge.Video.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7">
+      <HintPath>packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604">
+      <HintPath>packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d">
+      <HintPath>packages\K4os.Compression.LZ4.1.1.11\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d">
+      <HintPath>packages\K4os.Compression.LZ4.Streams.1.1.11\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3">
+      <HintPath>packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <HintPath>packages\MySql.Data.8.0.24\lib\net48\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>packages\QRCoder.1.4.1\lib\net40\QRCoder.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
+      <HintPath>packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <HintPath>packages\MySql.Data.8.0.24\lib\net48\Ubiety.Dns.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <HintPath>packages\MySql.Data.8.0.24\lib\net48\Zstandard.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60">
+      <HintPath>packages\ZXing.Net.0.16.6\lib\net48\zxing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.6.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60">
+      <HintPath>packages\ZXing.Net.0.16.6\lib\net48\zxing.presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_Common.cs" />
+    <Compile Include="Class_Encryption.cs" />
+    <Compile Include="Class_Naplo.cs" />
+    <Compile Include="EladasModosit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EladasModosit.Designer.cs">
+      <DependentUpon>EladasModosit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eladasok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eladasok.Designer.cs">
+      <DependentUpon>Eladasok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EladasokKereses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EladasokKereses.Designer.cs">
+      <DependentUpon>EladasokKereses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EladTermek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EladTermek.Designer.cs">
+      <DependentUpon>EladTermek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class_Felhasznalo.cs" />
+    <Compile Include="Felhasznalok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Felhasznalok.Designer.cs">
+      <DependentUpon>Felhasznalok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FelhasznaloKereses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FelhasznaloKereses.Designer.cs">
+      <DependentUpon>FelhasznaloKereses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FelhasznaloModosit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FelhasznaloModosit.Designer.cs">
+      <DependentUpon>FelhasznaloModosit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kezdolap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kezdolap.Designer.cs">
+      <DependentUpon>Kezdolap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class_Logging.cs" />
+    <Compile Include="MuveletKereses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuveletKereses.Designer.cs">
+      <DependentUpon>MuveletKereses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MuveletNaplo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MuveletNaplo.Designer.cs">
+      <DependentUpon>MuveletNaplo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MySQLadapter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortableBindigList.cs" />
+    <Compile Include="Class_Termek.cs" />
+    <Compile Include="TermekBasicInfo.cs" />
+    <Compile Include="Termekek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Termekek.Designer.cs">
+      <DependentUpon>Termekek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TermekKereses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermekKereses.Designer.cs">
+      <DependentUpon>TermekKereses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TermekMod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TermekMod.Designer.cs">
+      <DependentUpon>TermekMod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UjFelhasznalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UjFelhasznalo.Designer.cs">
+      <DependentUpon>UjFelhasznalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UjTermek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UjTermek.Designer.cs">
+      <DependentUpon>UjTermek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class_Eladas.cs" />
+    <Compile Include="WebcamQrScanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebcamQrScanner.Designer.cs">
+      <DependentUpon>WebcamQrScanner.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EladasModosit.resx">
+      <DependentUpon>EladasModosit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eladasok.resx">
+      <DependentUpon>Eladasok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EladasokKereses.resx">
+      <DependentUpon>EladasokKereses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EladTermek.resx">
+      <DependentUpon>EladTermek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Felhasznalok.resx">
+      <DependentUpon>Felhasznalok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FelhasznaloKereses.resx">
+      <DependentUpon>FelhasznaloKereses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FelhasznaloModosit.resx">
+      <DependentUpon>FelhasznaloModosit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kezdolap.resx">
+      <DependentUpon>Kezdolap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuveletKereses.resx">
+      <DependentUpon>MuveletKereses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MuveletNaplo.resx">
+      <DependentUpon>MuveletNaplo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Termekek.resx">
+      <DependentUpon>Termekek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TermekKereses.resx">
+      <DependentUpon>TermekKereses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UjFelhasznalo.resx">
+      <DependentUpon>UjFelhasznalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UjTermek.resx">
+      <DependentUpon>UjTermek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebcamQrScanner.resx">
+      <DependentUpon>WebcamQrScanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Raktarkezelo_TemporaryKey.pfx" />
+    <None Include="Resources\usersicon.png" />
+    <None Include="Resources\useradd.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\torol.png" />
+    <None Include="Resources\szerkeztes.png" />
+    <None Include="Resources\allgarbagesmall.png" />
+    <None Include="Resources\binsmall.png" />
+    <None Include="Resources\cartsmall.png" />
+    <None Include="Resources\history.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\productadd.png" />
+    <None Include="Resources\qrscansmall.png" />
+    <None Include="Resources\rendezes.png" />
+    <None Include="Resources\scannericon.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\shcart.png" />
+    <None Include="Resources\shoppingcart.png" />
+    <None Include="Resources\shoppingcartadd.png" />
+    <None Include="Resources\signout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
