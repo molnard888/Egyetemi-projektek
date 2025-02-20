@@ -1,0 +1,17 @@
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\Raktarkezelo_Android.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\Raktarkezelo_Android.deps.json
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\Raktarkezelo_Android.pdb
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\MySqlConnector.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\System.Buffers.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\System.Diagnostics.DiagnosticSource.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\System.Memory.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\System.Numerics.Vectors.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\System.Runtime.CompilerServices.Unsafe.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\System.Threading.Tasks.Extensions.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\Xamarin.Essentials.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\Xamarin.Forms.Core.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\Xamarin.Forms.Platform.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\Xamarin.Forms.Xaml.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\ZXingNetMobile.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\zxing.dll
+D:\PE_Mernokinfo\----Szakdolgozat----\Feltoltes\Szoftver\OXOOBF_Raktarkezelo_Android\Telepito\ZXing.Net.Mobile.Forms.dll
