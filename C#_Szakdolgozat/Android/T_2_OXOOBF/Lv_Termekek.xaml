@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="T_2_OXOOBF.TermekekLV">
+
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+            <!-- <Image Source="about_us.png" /> -->
+            <Label x:Name="BelepveLbl" Text="Belépve: " VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Label x:Name="UsernameLbl" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Button x:Name="LogOutBtn" VerticalOptions="End" BackgroundColor="Transparent"
+                    BorderColor="Transparent" BorderWidth="1" CornerRadius="20" Clicked="LogOutBtn_Clicked" ImageSource="signout.png"></Button>
+            <!-- <Image Source="signout.png"/>    -->
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="0.2"/>
+        </Grid.ColumnDefinitions>
+
+        <StackLayout>
+            <ListView x:Name="MyListView" ItemsSource="{Binding Items}" ItemTapped="Handle_ItemTapped">
+                <ListView.Header>
+                    <Grid BackgroundColor="Black" ColumnSpacing="0" RowSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="1*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Márka" HorizontalOptions="Fill"  Grid.Column="0" FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1"/>
+                        <Label Text="Típus" HorizontalOptions="Fill" Grid.Column="1" FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1"/>
+                        <Label Text="Kategória" HorizontalOptions="Fill" Grid.Column="2" FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1"/>
+                        <Label Text="Ár" HorizontalOptions="Fill" Grid.Column="3" FontSize="Medium" FontAttributes="Bold" BackgroundColor="MediumBlue" TextColor="White" HorizontalTextAlignment="Center" Margin="1"/>
+                    </Grid>
+                </ListView.Header>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid x:Name="Grid_DispGrid" BackgroundColor="Black" ColumnSpacing="0" RowSpacing="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                    <ColumnDefinition Width="1*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Text ="{Binding Marka}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1"></Label>
+                                <Label Grid.Column="1" Text ="{Binding Tipus}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1"></Label>
+                                <Label Grid.Column="2" Text ="{Binding Kategoria}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1"></Label>
+                                <Label Grid.Column="3" Text ="{Binding Ar}" HorizontalOptions="Fill" BackgroundColor="White" HorizontalTextAlignment="Center" Margin="1"></Label>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" Grid.Row="1" VerticalOptions="CenterAndExpand">
+
+            <Button x:Name="KeresBttn" 
+            HorizontalOptions="FillAndExpand"  
+                        ImageSource="search.png" Clicked="KeresBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" /> 
+
+            <Button x:Name="RendezBttn"
+            HorizontalOptions="FillAndExpand"   
+                        ImageSource="rendezes.png" Clicked="RendezBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            <Button x:Name="TorolBttn"
+            HorizontalOptions="FillAndExpand" 
+                        ImageSource="torol.png" Clicked="TorolBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            <Button x:Name="KosarbaBttn" 
+            HorizontalOptions="FillAndExpand" 
+                        ImageSource="shcart.png" Clicked="KosarbaBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+
+            <Button x:Name="SzerkesztesBttn"
+            HorizontalOptions="FillAndExpand"  
+                        ImageSource="szerkeztes.png" Clicked="SzerkesztesBttn_Clicked" WidthRequest="10" CornerRadius="5" BackgroundColor="#2194f3" />
+            
+        </StackLayout>
+    </Grid>
+
+    
+
+   
+</ContentPage>

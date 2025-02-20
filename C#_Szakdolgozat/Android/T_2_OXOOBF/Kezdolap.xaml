@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="T_2_OXOOBF.Kezdolap"
+             NavigationPage.HasBackButton="False" BackgroundImageSource="YKK_Storefront_Mobile.jpg" BackgroundColor="Transparent">
+    
+    
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+            <!-- <Image Source="about_us.png" /> -->
+            <Label x:Name="BelepveLbl" Text="Belépve: " VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Label x:Name="UsernameLbl" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Button VerticalOptions="End" BackgroundColor="Transparent"
+                    BorderColor="Transparent" BorderWidth="1" CornerRadius="20" Clicked="LogOut" ImageSource="signout.png"></Button>
+            <!-- <Image Source="signout.png"/>    -->         
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid x:Name="MainGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition Width="0.5*" />
+                </Grid.ColumnDefinitions>
+                
+                <Button Text="Termékek"
+            x:Name="termekekbtn"
+           ContentLayout="Top,0"
+            HorizontalOptions="Center"  
+                        VerticalOptions="CenterAndExpand"  BorderColor="Black" CornerRadius="15"
+            Grid.Row="0"
+            Grid.Column="0"
+                        ImageSource="list.png" Margin="0,10,0,0" Clicked="Termekekbtn_Clicked" BackgroundColor="#7F808080"/>
+
+                <Button Text="Beolvas"
+             x:Name="beolvasbtn"
+                        VerticalOptions="CenterAndExpand" BorderColor="Black" CornerRadius="15"
+            ContentLayout="Top,0"
+            HorizontalOptions="Center"   
+            Grid.Row="0"
+            Grid.Column="1"
+                        ImageSource="scannericon.png" Margin="0,10,0,0" Clicked="Beolvasbtn_Clicked" BackgroundColor="#7F808080"/>
+
+                <Button Text="Új termék"
+            x:Name="ujtermekbtn"
+            ContentLayout="Top,0"
+            HorizontalOptions="Center"   
+                        VerticalOptions="CenterAndExpand" BorderColor="Black" CornerRadius="15"
+            Grid.Row="1"
+            Grid.Column="0"
+                        ImageSource="productadd.png" Clicked="Ujtermekbtn_Clicked" BackgroundColor="#7F808080"/>
+
+            
+                <Button Text="Eladások"
+            x:Name="eladásokbtn"
+            ContentLayout="Top,0"
+            HorizontalOptions="Center" 
+                        VerticalOptions="CenterAndExpand" BorderColor="Black" CornerRadius="15"
+            Grid.Row="1"
+            Grid.Column="1"
+                        ImageSource="shoppingcart.png" Clicked="Eladásokbtn_Clicked" BackgroundColor="#A6808080"/>
+
+                <Button Text="Felhasználók"
+            x:Name="felhasznalokbtn"
+            ContentLayout="Top,0"
+            HorizontalOptions="Center"  
+                        VerticalOptions="CenterAndExpand" IsVisible="True" BorderColor="Black" CornerRadius="15"
+            Grid.Row="2"
+            Grid.Column="0"
+                        ImageSource="usersicon.png" Clicked="Felhasznalokbtn_Clicked" BackgroundColor="#7F808080"/>
+
+                <Button Text="Új felhasználó"
+             x:Name="ujfelhasznalobtn"
+            ContentLayout="Top,0"
+            HorizontalOptions="Center"  
+                        VerticalOptions="CenterAndExpand" IsVisible="True" BorderColor="Black" CornerRadius="15"
+            Grid.Row="2"
+            Grid.Column="1"
+                        ImageSource="useradd.png" Clicked="Ujfelhasznalobtn_Clicked" BackgroundColor="#7F808080"/>
+
+                <Button Text="Log"
+             x:Name="LogBttn"
+            ContentLayout="Top,0"
+            HorizontalOptions="CenterAndExpand"  
+                        VerticalOptions="CenterAndExpand" BorderColor="Black" CornerRadius="15"
+            Grid.Row="3"
+            Grid.Column="0"
+                        ImageSource="history.png" Clicked="LogBttn_Clicked" BackgroundColor="#7F808080"/>
+
+                <!--  <Button Text="Top icon" ContentLayout="Top,0" Image="useradd.png"  HorizontalOptions="Start"  Grid.Row="3"
+            Grid.Column="0"/> -->
+
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>

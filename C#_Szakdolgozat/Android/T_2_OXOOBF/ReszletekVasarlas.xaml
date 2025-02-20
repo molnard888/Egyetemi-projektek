@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="T_2_OXOOBF.VasarlasReszletek">
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+            <!-- <Image Source="about_us.png" /> -->
+            <Label x:Name="BelepveLbl" Text="Belépve: " VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Label x:Name="UsernameLbl" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Button x:Name="LogOutBtn" VerticalOptions="End" BackgroundColor="Transparent"
+                    BorderColor="Transparent" BorderWidth="1" CornerRadius="20" Clicked="LogOutBtn_Clicked" ImageSource="signout.png"></Button>
+            <!-- <Image Source="signout.png"/>    -->
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+
+    <StackLayout BackgroundColor="#9FFFFFFF">
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Margin="10,0,0,0" Text="Név:" Grid.Row="0" Grid.Column="0" FontSize="Medium"  HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black" ></Label>
+            <Entry x:Name="Nev" IsEnabled="False"  Grid.Row="0" Grid.Column="1" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray" />
+            <Label Margin="10,0,0,0" Text="Telefon:"  Grid.Row="1" Grid.Column="0" FontSize="Medium"  HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+            <Entry x:Name="Telefon" IsEnabled="False"  Grid.Row="1" Grid.Column="1" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Label Margin="10,0,0,0" Text="Cím:"   Grid.Row="2" Grid.Column="0" FontSize="Medium"  HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+            <Entry x:Name="Cim" IsEnabled="False"   Grid.Row="2" Grid.Column="1" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Label Margin="10,0,0,0" Text="RaktárID:"   Grid.Row="3" Grid.Column="0" FontSize="Medium"  HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+            <Entry x:Name="RaktarID" IsEnabled="False"  Grid.Row="3" Grid.Column="1" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Label Margin="10,0,0,0" Text="Azonosítók:"   Grid.Row="4" Grid.Column="0" FontSize="Medium"  HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+            <Entry x:Name="Azonositok" IsEnabled="False"   Grid.Row="4" Grid.Column="1" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Label Margin="10,0,0,0" Text="VásárlásID:"   Grid.Row="5" Grid.Column="0" FontSize="Medium"  HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+            <Entry x:Name="VasarlasID" IsEnabled="False"   Grid.Row="5" Grid.Column="1" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Label Margin="10,0,0,0" Text="Végösszeg:"   Grid.Row="6" Grid.Column="0" FontSize="Medium"  HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+            <Entry x:Name="Vegosszeg" IsEnabled="False"   Grid.Row="6" Grid.Column="1" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            <Label Margin="10,0,0,0" Text="Vasarlás ideje:"   Grid.Row="7" Grid.Column="0" FontSize="Medium"  HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" ></Label>
+            <Entry x:Name="VasarlasIdo" IsEnabled="False"   Grid.Row="7" Grid.Column="1" FontSize="Medium" HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="FillAndExpand" TextColor="Black" PlaceholderColor="Gray"></Entry>
+            
+
+        </Grid>
+        <Button x:Name="MentesBttn" TextColor="Black" Margin="60,0,60,0" CornerRadius="5" BackgroundColor="#2194f3"
+                    BorderColor="Gray" BorderWidth="1.5" Clicked="MentesBttn_Clicked"></Button>
+    </StackLayout>
+</ContentPage>

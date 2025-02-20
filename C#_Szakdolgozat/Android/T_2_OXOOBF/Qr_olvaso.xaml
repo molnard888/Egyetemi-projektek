@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="T_2_OXOOBF.Qr_olvaso"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms">
+
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="Transparent" HorizontalOptions="EndAndExpand" VerticalOptions="Center">
+            <!-- <Image Source="about_us.png" /> -->
+            <Label x:Name="BelepveLbl" Text="Belépve: " VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Label x:Name="UsernameLbl" Text="" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" TextColor="Black"/>
+            <Button x:Name="LogOutBtn" VerticalOptions="End" BackgroundColor="Transparent"
+                    BorderColor="Transparent" BorderWidth="1" CornerRadius="20" Clicked="LogOutBtn_Clicked" ImageSource="signout.png"></Button>
+            <!-- <Image Source="signout.png"/>    -->
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="ScanResult" HorizontalTextAlignment="Center"/>
+            <zxing:ZXingScannerView x:Name="QRscanner" IsScanning="True" OnScanResult="ZXingScannerView_OnScanResult"/>
+            <Button x:Name="BeolvasStartStop" Text="Beolvas" Clicked="BeolvasStartStop_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+    
+    
+</ContentPage>
