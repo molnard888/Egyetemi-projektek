@@ -1,0 +1,237 @@
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\Raktarkezelo.exe.config
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\Raktarkezelo.exe
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\Raktarkezelo.pdb
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\BouncyCastle.Crypto.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\Google.Protobuf.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\K4os.Hash.xxHash.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\MySql.Data.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\System.Buffers.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\System.Memory.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\System.Numerics.Vectors.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\Ubiety.Dns.Core.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\Zstandard.Net.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\Google.Protobuf.pdb
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\Google.Protobuf.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\K4os.Hash.xxHash.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\MySql.Data.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\System.Buffers.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\System.Memory.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\System.Numerics.Vectors.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.exe.config
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.Form1.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.Properties.Resources.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.GenerateResource.cache
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.CoreCompileInputs.cache
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.exe
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.pdb
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.Termekek.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.Login.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.UjTermek.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.Eladasok.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.Felhasznalok.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.TermekKereses.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.UjFelhasznalo.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.TermekModosit.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.FelhasznaloModosit.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.FelhasznaloKereses.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.EladTermek.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\AForge.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\AForge.Video.DirectShow.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\AForge.Video.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\zxing.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\zxing.presentation.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\AForge.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\AForge.Video.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\AForge.Video.DirectShow.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\zxing.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\zxing.presentation.xml
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.WebcamQrScanner.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\bin\Debug\QRCoder.dll
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.EladasModosit.resources
+D:\Pannon-Mernokinfo\4. felev\T_I\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.AssemblyReference.cache
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\Raktarkezelo.exe.config
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\Raktarkezelo.exe
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\Raktarkezelo.pdb
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\AForge.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\AForge.Video.DirectShow.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\AForge.Video.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\BouncyCastle.Crypto.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\Google.Protobuf.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\K4os.Hash.xxHash.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\MySql.Data.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\QRCoder.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\System.Buffers.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\System.Memory.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\System.Numerics.Vectors.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\Ubiety.Dns.Core.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\Zstandard.Net.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\zxing.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\zxing.presentation.dll
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\AForge.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\AForge.Video.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\AForge.Video.DirectShow.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\Google.Protobuf.pdb
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\Google.Protobuf.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\K4os.Hash.xxHash.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\MySql.Data.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\System.Buffers.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\System.Memory.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\System.Numerics.Vectors.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\zxing.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\bin\Debug\zxing.presentation.xml
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.AssemblyReference.cache
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.SuggestedBindingRedirects.cache
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.exe.config
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.EladasModosit.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Eladasok.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.EladTermek.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Felhasznalok.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.FelhasznaloKereses.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.FelhasznaloModosit.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Form1.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Properties.Resources.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Termekek.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.TermekKereses.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.TermekModosit.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.UjFelhasznalo.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.UjTermek.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.WebcamQrScanner.resources
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.GenerateResource.cache
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.CoreCompileInputs.cache
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.CopyComplete
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.exe
+D:\C#_Szakdolgozati_munka\Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.pdb
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\Raktarkezelo.exe.config
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\Raktarkezelo.exe
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\Raktarkezelo.pdb
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\AForge.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\AForge.Video.DirectShow.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\AForge.Video.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\BouncyCastle.Crypto.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\Google.Protobuf.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\K4os.Hash.xxHash.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\MySql.Data.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\QRCoder.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\System.Buffers.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\System.Memory.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\System.Numerics.Vectors.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\Ubiety.Dns.Core.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\Zstandard.Net.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\zxing.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\zxing.presentation.dll
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\AForge.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\AForge.Video.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\AForge.Video.DirectShow.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\Google.Protobuf.pdb
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\Google.Protobuf.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\K4os.Hash.xxHash.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\MySql.Data.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\System.Buffers.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\System.Memory.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\System.Numerics.Vectors.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\zxing.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\bin\Debug\zxing.presentation.xml
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.AssemblyReference.cache
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.SuggestedBindingRedirects.cache
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.exe.config
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.EladasModosit.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Eladasok.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.EladTermek.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Felhasznalok.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.FelhasznaloKereses.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.FelhasznaloModosit.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Properties.Resources.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Termekek.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.TermekKereses.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.TermekModosit.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.UjFelhasznalo.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.UjTermek.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.WebcamQrScanner.resources
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.GenerateResource.cache
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.CoreCompileInputs.cache
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.CopyComplete
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.exe
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.pdb
+D:\Repos\molnard888\Raktarkezelo_Desktop_platform\Raktarkezelo\obj\Debug\Raktarkezelo.Bejelentkezes.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Raktarkezelo.exe.config
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Raktarkezelo.exe
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Raktarkezelo.pdb
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\AForge.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\AForge.Video.DirectShow.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\AForge.Video.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\BouncyCastle.Crypto.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Google.Protobuf.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\K4os.Hash.xxHash.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\MySql.Data.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\QRCoder.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\System.Buffers.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\System.Memory.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\System.Numerics.Vectors.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Ubiety.Dns.Core.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Zstandard.Net.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\zxing.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\zxing.presentation.dll
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\AForge.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\AForge.Video.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\AForge.Video.DirectShow.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Google.Protobuf.pdb
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Google.Protobuf.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\K4os.Hash.xxHash.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\MySql.Data.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\System.Buffers.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\System.Memory.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\System.Numerics.Vectors.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\zxing.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\zxing.presentation.xml
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.AssemblyReference.cache
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.SuggestedBindingRedirects.cache
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.exe.config
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.EladasModosit.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.Eladasok.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.EladTermek.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.Felhasznalok.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.FelhasznaloKereses.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.FelhasznaloModosit.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.Properties.Resources.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.Termekek.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.TermekKereses.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.UjFelhasznalo.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.UjTermek.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.WebcamQrScanner.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.GenerateResource.cache
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.CoreCompileInputs.cache
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.csproj.CopyComplete
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.exe
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.pdb
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.Kezdolap.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.MuveletNaplo.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.MuveletKereses.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.EladasokKereses.resources
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.exe.manifest
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Raktarkezelo.exe.manifest
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\bin\Debug\Raktarkezelo.application
+D:\Repos\molnard888\20230415_Raktarkezelo_Desktop_platform\SzD_Desktop\Raktarkezelo\obj\Debug\Raktarkezelo.application
