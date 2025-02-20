@@ -1,12 +1,6 @@
 # Rendszerfejlesztés korszerű módszerei - 33.csapat 👨‍💻
 A rendszerfejlesztés korszerű módszerei tárgy 33. csapatának github repository-ja.
-## Csapattagok
-| Név | Neptunkód | Szerver vagy Kliens |
-| ------ | ------ | ------ |
-| Holicza Barnabás | ARIAN2 | Szerver |
-| Kretz Zsombor György | EMSCZY | Szerver |
-| Altmann Bence | Y19WIL | Kliens |
-| Molnár Dániel | OXOOBF | Kliens |
+
 
 ## Szerver-Kliens Architektúra
 | Név | Választott technológia/programozási nyelv |
@@ -14,12 +8,6 @@ A rendszerfejlesztés korszerű módszerei tárgy 33. csapatának github reposit
 | Szerver | Python, Socket, Sqlite |
 | Kliens | React, TypeScript |
 
-## Beszámolók időpontjai
-| Beszámoló | Mennyi idő van még hátra? |
-| ------ | ------ |
-| Beszámoló 1 | [2022.04.05. 10:30](https://www.tickcounter.com/countdown/3124637/beszamolo-1) |
-| Beszámoló 2 | [2022.05.03. 10:30](https://www.tickcounter.com/countdown/3124638/beszamolo-2) |
-| Beszámoló 3 | [2022.05.17. 10:30](https://www.tickcounter.com/countdown/3124641/beszamolo-3) |
 
 ## Mérföldkövek
 ### 1. Mérföldkő
